@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lullaby Tunes</title>
+    <meta name="description" content="We’re a grooving Hong Kong DJ agency from France.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+	<meta property="og:image" content="" />
+	<meta property="og:title" content="Lullaby Tunes" />
+    <meta property="og:description" content="We’re a grooving Hong Kong DJ agency from France." />
+    <meta property="og:author" content="Marek Sivák" />
+	
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+<link rel="manifest" href="./img/favicon/site.webmanifest">
+<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#000000">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW" />
+    
+    <link rel="stylesheet" href="https://use.typekit.net/man3xsd.css">
+      
+	<link rel="stylesheet" href="./css/anims/animate.css" type="text/css" />
+    <link rel="stylesheet" href="./js/glidejs/css/glide.core.min.css">
+
+    <link rel="stylesheet" href="./css/flexboxgrid.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/lullabytunes.css?ver=1" type="text/css" />
+    <link rel="stylesheet" href="./css/lullabytunes-responsive.css?ver=2" type="text/css" />
+
+
+    
+    <!--<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>-->
+
+	<style>
+		*,
+		*:before,
+		*:after{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: Arial;
+		}
+		
+		header{
+			color: #888;
+		}
+
+		header h1{
+			font-size: 30px;
+		}
+
+		.container{
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		#content{
+			border: 1px dotted green;
+			padding: 18px;
+			margin-left: 215px;
+			min-height: 600px;
+			color: darkgrey;
+		}
+
+		#sidebar{
+			float: left;
+			width: 200px;
+			color: #ce8888;
+			will-change: min-height;
+		}
+
+		#sidebar .sidebar__inner{
+			border: 1px dotted red;
+			background-color: rgba(255, 0, 0, 0.01);
+			padding: 10px;
+			position: relative;
+			transform: translate(0, 0);
+			transform: translate3d(0, 0, 0);
+			will-change: position, transform;
+		}
+
+		footer{
+			height: 1850px;
+			height: 85vh;
+			border: 1px dotted black;
+			margin-top: 20px;
+			text-align: center;
+			color: #8e8d8d;
+			line-height: 450px;
+			line-height: 95vh;
+			background: rgba(0, 0, 0, 0.02);
+		}
+
+		footer p{
+			margin: 0;
+		}
+
+		.clearfix:after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Site Title</h1>
+		</div>
+	</header>
+
+	<div class="container clearfix">
+		<div id="sidebar">
+			<div class="sidebar__inner">
+				<p>This is sticky column</p>
+			</div>
+		</div>
+		<div id="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus id leo et aliquam. Proin consectetur ligula vel neque cursus laoreet. Nullam dignissim, augue at consectetur pellentesque, metus ipsum interdum sapien, quis ornare quam enim vel ipsum.</p>
+
+			<p>In congue nunc vitae magna tempor ultrices. Cras ultricies posuere elit. Nullam ultrices purus ante, at mattis leo placerat ac. Nunc faucibus ligula nec lorem sodales venenatis. Curabitur nec est condimentum, blandit tellus nec, semper arcu. Nullam in porta ipsum, non consectetur mi. Sed pharetra sapien nisl. Aliquam ac lectus sed elit vehicula scelerisque ut vel sem. Ut ut semper nisl.</p>
+
+			<p>Curabitur rhoncus, arcu at placerat volutpat, felis elit sollicitudin ante, sed tempus justo nibh sed massa. Integer vestibulum non ante ornare eleifend. In vel mollis dolor.</p>
+		</div>		
+	</div>
+
+	<footer>
+		<p>Very Tall Footer</p>
+	</footer>
+
+    
+	<script type="text/javascript" src="./js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="./js/sticky-sidebar.js"></script>
+	<script type="text/javascript">
+		
+		var stickySidebar = new StickySidebar('#sidebar', {
+			bottomSpacing: 20,
+			topSpacing: 20,
+			containerSelector: '.container',
+			innerWrapperSelector: '.sidebar__inner'
+		});
+	</script>
+</body>
+</html>

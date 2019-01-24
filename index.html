@@ -29,9 +29,9 @@
     <link rel="stylesheet" href="./css/lullabytunes.css?ver=1" type="text/css" />
     <link rel="stylesheet" href="./css/lullabytunes-responsive.css?ver=2" type="text/css" />
 
-    <script src="./js/init-scripts.js"></script>
+
     
-    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>-->
 </head>
 <body class="landing">
 <div class="nav">
@@ -48,15 +48,15 @@
                 <li><a alt="About "href="#about">About</a></li>
                 <li><a alt="Services" href="#services">How it works</a></li>
                 <li><a alt="Clients" href="#clients" alt="Clients">Clients</a></li>
-                <li><a href="#contact" alt="Contact">Contact</a></li>-->
+                <li><a href="#contact" alt="Contact">Contact</a></li>
             </ul>
         </div>
     </div>
     
 </div>    
     
-<div class="container wow fadeIn">
-    <div class="row section hero middle-md">
+<div class="container section wow fadeIn">
+    <div class="row hero middle-md">
         <div class="col-xs-12 col-md-7 no-padding">
             <div class="section-wrapper">
                 <h1>We’re a grooving Hong Kong DJ agency from France.</h1>
@@ -65,8 +65,8 @@
     </div>
 </div>
     
-<div class="container section wow fadeIn">
-    <div class="row section hero">
+<div class="container sectionwow fadeIn">
+    <div class="row">
         <div class="col-xs-12 col-md-7 section-wrapper">
             <h3 class="label">About Us</h3>
             <div class="text-primary">Lullaby Tunes can provide a 360° solution for your musical needs. Whether you’re planning an event for your company, celebrating a special occasion or looking to give your venue a musical identity, </div>
@@ -75,9 +75,44 @@
         </div>
     </div>
 </div>
+
     
+<div class="container section ">
+    <div class="row sticky-container" style="background:red">
+        <div class="col-xs-12 col-md-4 no-padding sidebar" id="sidebar">
+            <div class="sidebar__inner">
+                <h3 class="label">Our Services</h3>
+                <div class="text-primary">Corporate evets</div>
+                <div class="text-primary">Audio Branding</div>
+                <div class="text-primary">Weddings and personal parties</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            
+            <div class="services-block">
+                <div class="text-third">Professionalism first.</div>
+                <div class="text-small">Product launch, corporate parties, grand openings or boat parties: our DJs deliver an elegant European flair with a highly professional attitude.  From advising on the most suitable sound system to booking the proper DJ, we work with great companies to help them make their event a success.
+                </div>
+            </div>
+            <div class="services-block">
+                <div class="text-third">Emotive Audio Content Builds Brand Identity </div>
+                <div class="text-small">Lullaby Tunes works with top brands, stores and hospitality venues to create the perfect synergy for your place. On top of catering a precise sound, we understand that smart use of music and avoiding copyrights violation are always the issues for marketers.
+
+                Be it in-store mixes, commercial scoring or developing a live set that speaks your message, music sets the tone for every experience.
+                </div>
+            </div>
+            <div class="services-block">
+                <div class="text-third">A great party starts with great music.</div>
+                <div class="text-small">We help turn your party into an unforgettable moment. Lullaby Tunes listen to your need to define what music will resonate the best with you and your closed ones. We strive to be professional, flexible and adaptive to make sure you get the atmosphere you need and the dance floor your party deserves.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
 <div class="container section wow fadeIn">
-    <div class="row section hero">
+    <div class="row">
         <div class="col-xs-12 col-md-7 section-wrapper">
             <h3 class="label">Our Services</h3>
             <div class="services-block">
@@ -104,7 +139,28 @@
     </div>
 </div>
     
+    
 
+<script src="./js/ResizeSensor.js"></script>
+<script src="./js/sticky-sidebar.js"></script>
+<script type="text/javascript">
+    var h_sidebar = document.getElementById('sidebar');
+    
+    var sidebar = new StickySidebar(h_sidebar, {
+    topSpacing: 100,
+    bottomSpacing: 20,
+    resizeSensor: true,
+    containerSelector: '.sticky-container',
+    innerWrapperSelector: '.sidebar__inner'
+    });
+    h_sidebar.addEventListener('affix.top.stickySidebar', function () {
+    console.log('Sidebar has stuck top of viewport.');
+});
+    h_sidebar.addEventListener('affix.bottom.stickySidebar', function (event) {
+    console.log('Sidebar has stuck bottom of viewport.');
+});
+</script>
+<!--<script src="./js/init-scripts.js"></script>-->
     
 </body>    
 </html>    

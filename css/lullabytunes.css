@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box; 
-    transition: 0.2s;
+    /* transition: 0.2s; - sticky sidebar conflict*/
     
     scroll-behavior: smooth;
     margin: 0;
@@ -63,14 +63,18 @@ ul {
     font-weight: 700;
 }
 
+.no-padding {
+    padding: 0;
+}
+
 .landing {
     font-size: 19px;
     line-height: 24px;
 }
 
 .section {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background: #C4C4CB;
     background: #fff;
     color: #000;
@@ -110,3 +114,29 @@ ul {
     line-height: 1.5;
     color: #898989;
 }
+
+#content{
+			border: 1px dotted green;
+			padding: 18px;
+			margin-left: 215px;
+			min-height: 600px;
+			color: darkgrey;
+		}
+
+		#sidebar{
+			float: left;
+			width: 200px;
+			color: #ce8888;
+			will-change: min-height;
+		}
+
+		#sidebar .sidebar__inner{
+			border: 1px dotted red;
+			background-color: rgba(255, 0, 0, 0.01);
+			padding: 10px;
+			position: relative;
+			transform: translate(0, 0);
+			transform: translate3d(0, 0, 0);
+			will-change: position, transform;
+		}
+
