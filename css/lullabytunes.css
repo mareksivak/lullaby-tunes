@@ -67,6 +67,19 @@ ul {
     padding: 0;
 }
 
+.nav {
+    padding: 2rem 4rem;
+}
+.nav .menu li {
+    display: inline;
+    margin-left: 2rem;
+}
+
+.nav .active {
+    color: red;
+    font-weight: bold; 
+}
+
 .landing {
     font-size: 19px;
     line-height: 24px;
@@ -115,28 +128,35 @@ ul {
     color: #898989;
 }
 
+
+
+.sidebar-item.active {
+    color: red;
+    font-weight: bold;
+}
+
 #content{
-			border: 1px dotted green;
-			padding: 18px;
-			margin-left: 215px;
-			min-height: 600px;
-			color: darkgrey;
-		}
+    border: 1px dotted green;
+    padding: 18px;
+    margin-left: 215px;
+    min-height: 600px;
+    color: darkgrey;
+}
 
-		#sidebar{
-			float: left;
-			width: 200px;
-			color: #ce8888;
-			will-change: min-height;
-		}
+#sidebar{
+    float: left;
+    width: 200px;
+    color: #ce8888;
+    will-change: min-height;
+}
 
-		#sidebar .sidebar__inner{
-			border: 1px dotted red;
-			background-color: rgba(255, 0, 0, 0.01);
-			padding: 10px;
-			position: relative;
-			transform: translate(0, 0);
-			transform: translate3d(0, 0, 0);
-			will-change: position, transform;
-		}
+#sidebar .sidebar__inner{
+    border: 1px dotted red;
+    background-color: rgba(255, 0, 0, 0.01);
+    padding: 10px;
+    position: relative;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
 

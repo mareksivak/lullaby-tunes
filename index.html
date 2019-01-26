@@ -36,19 +36,16 @@
 <body class="landing">
 <div class="nav">
     <div class="row middle-md">
-        <div class="col-xs-3 no-sm no-padding">
-            <div class="menu"><img id="nav-open" src="./img/bars.svg" alt="Menu"></div>
-        </div>
         <div class="col-xs-9 end-xs start-sm col-md-6 no-padding">
             <div class="logo"><a target="_blank" href="//lullabytunes.co"><img src="." alt="Lullaby Tunes"></a></div>
         </div>
         <div class="col-md-6 end-xs no-xs">
-            <ul class="menu">
+            <ul class="menu" id="navmenu">
                 
-                <li><a alt="About "href="#about">About</a></li>
-                <li><a alt="Services" href="#services">How it works</a></li>
+                <li><a alt="About" href="#about">About</a></li>
+                <li><a alt="Services" href="#our-services">How it works</a></li>
                 <li><a alt="Clients" href="#clients" alt="Clients">Clients</a></li>
-                <li><a href="#contact" alt="Contact">Contact</a></li>
+                <li><a alt="Contact" href="#Contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -65,7 +62,7 @@
     </div>
 </div>
     
-<div class="container sectionwow fadeIn">
+<div class="container sectionwow fadeIn" id="about">
     <div class="row">
         <div class="col-xs-12 col-md-7 section-wrapper">
             <h3 class="label">About Us</h3>
@@ -77,31 +74,31 @@
 </div>
 
     
-<div class="container section ">
-    <div class="row sticky-container" style="background:red">
+<div class="container section" id="our-services">
+    <div class="row section-wrapper sticky-container" style="background:#eee">
         <div class="col-xs-12 col-md-4 no-padding sidebar" id="sidebar">
             <div class="sidebar__inner">
                 <h3 class="label">Our Services</h3>
-                <div class="text-primary">Corporate evets</div>
-                <div class="text-primary">Audio Branding</div>
-                <div class="text-primary">Weddings and personal parties</div>
+                <div class="text-primary sidebar-item active"><a href="#service1">Corporate evets</a></div>
+                <div class="text-primary sidebar-item"><a href="#service2">Audio Branding</a></div>
+                <div class="text-primary sidebar-item"><a href="#service3">Weddings and personal parties</a></div>
             </div>
         </div>
         <div class="col-xs-12 col-md-4">
             
-            <div class="services-block">
+            <div class="services-block" id="service1">
                 <div class="text-third">Professionalism first.</div>
                 <div class="text-small">Product launch, corporate parties, grand openings or boat parties: our DJs deliver an elegant European flair with a highly professional attitude.  From advising on the most suitable sound system to booking the proper DJ, we work with great companies to help them make their event a success.
                 </div>
             </div>
-            <div class="services-block">
+            <div class="services-block" id="service2">
                 <div class="text-third">Emotive Audio Content Builds Brand Identity </div>
                 <div class="text-small">Lullaby Tunes works with top brands, stores and hospitality venues to create the perfect synergy for your place. On top of catering a precise sound, we understand that smart use of music and avoiding copyrights violation are always the issues for marketers.
 
                 Be it in-store mixes, commercial scoring or developing a live set that speaks your message, music sets the tone for every experience.
                 </div>
             </div>
-            <div class="services-block">
+            <div class="services-block" id="service3">
                 <div class="text-third">A great party starts with great music.</div>
                 <div class="text-small">We help turn your party into an unforgettable moment. Lullaby Tunes listen to your need to define what music will resonate the best with you and your closed ones. We strive to be professional, flexible and adaptive to make sure you get the atmosphere you need and the dance floor your party deserves.
                 </div>
@@ -138,11 +135,62 @@
         </div>
     </div>
 </div>
+
+<div class="container section wow fadeIn">
+    <div class="row">
+        <div class="col-xs-12 col-md-7 section-wrapper">
+            <h3 class="label">Our Services</h3>
+            <div class="services-block">
+                <div class="text-primary">Corporate evets</div>
+                <div class="text-third">Professionalism first.</div>
+                <div class="text-small">Product launch, corporate parties, grand openings or boat parties: our DJs deliver an elegant European flair with a highly professional attitude.  From advising on the most suitable sound system to booking the proper DJ, we work with great companies to help them make their event a success.
+                </div>
+            </div>
+            <div class="services-block">
+                <div class="text-primary">Audio Branding</div>
+                <div class="text-third">Emotive Audio Content Builds Brand Identity </div>
+                <div class="text-small">Lullaby Tunes works with top brands, stores and hospitality venues to create the perfect synergy for your place. On top of catering a precise sound, we understand that smart use of music and avoiding copyrights violation are always the issues for marketers.
+
+                Be it in-store mixes, commercial scoring or developing a live set that speaks your message, music sets the tone for every experience.
+                </div>
+            </div>
+            <div class="services-block">
+                <div class="text-primary">Weddings and personal parties</div>
+                <div class="text-third">A great party starts with great music.</div>
+                <div class="text-small">We help turn your party into an unforgettable moment. Lullaby Tunes listen to your need to define what music will resonate the best with you and your closed ones. We strive to be professional, flexible and adaptive to make sure you get the atmosphere you need and the dance floor your party deserves.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="container section" id="clients">
+    <div class="row">
+        <div class="col-xs-12 col-md-7 section-wrapper">
+            <h3 class="label">Clients</h3>
+            
+        </div>
+    </div>
+</div>
     
     
+<div class="container section" id="contact">
+    <div class="row">
+        <div class="col-xs-12 col-md-7 section-wrapper">
+            <h3 class="label">Contact</h3>
+            
+        </div>
+    </div>
+</div>
+    
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
 <script src="./js/ResizeSensor.js"></script>
 <script src="./js/sticky-sidebar.js"></script>
+<script src="./js/side-highlight.js"></script>
 <script type="text/javascript">
     var h_sidebar = document.getElementById('sidebar');
     
