@@ -10,7 +10,8 @@
 
 body
 {
-    font-family: "avenir";
+    font-family: aktiv-grotesk, avenir, sans-serif;
+    font-weight: 200;
 	font-size:16px;
     line-height: 1.5;
     color: #333;
@@ -42,8 +43,7 @@ a img:hover {
 }
 
 h1, h2, h3, h5 {
-    font-family: "avenir";
-    font-weight: 500;
+    font-weight: 200;
     line-height: 1.5;
     margin: 0;
 }
@@ -68,11 +68,12 @@ ul {
 }
 
 .nav {
-    padding: 2rem 4rem;
+    padding: 4rem 4rem;
 }
 .nav .menu li {
     display: inline;
     margin-left: 2rem;
+    font-size: 16px;
 }
 
 .nav .active {
@@ -101,14 +102,14 @@ ul {
 .text-first {
     margin-top: 2rem;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 200;
     line-height: 1.5;
 }
 
 .text-second {
     margin-top: 2rem;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.5;
     color: #898989;
 }
@@ -116,8 +117,9 @@ ul {
 .text-third {
     margin-top: 2rem;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.5;
+    color: #898989;
 }
 
 .text-small {
@@ -128,14 +130,40 @@ ul {
     color: #898989;
 }
 
-
-.services-block {
-    margin-bottom: 8rem;
+.label {
+    font-size: 15px;
+    font-weight: 700;
 }
 
-.sidebar-item.active {
-    color: red;
-    font-weight: bold;
+.hero {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.client-logo-wrapper img {
+    max-width: 100%;
+    padding: 4rem;
+}
+
+.services-block {
+    margin-bottom: 16rem;
+}
+.services-block:last-child {
+    margin-bottom: 0rem;
+}
+
+.sidebar-item a {
+    color: #898989;
+    margin-right: 2rem;
+}
+.sidebar-item.active a {
+    color: #000;
+    font-weight: 400;
+}
+
+footer {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 #content{
@@ -149,17 +177,22 @@ ul {
 #sidebar{
     float: left;
     width: 200px;
-    color: #ce8888;
     will-change: min-height;
 }
 
 #sidebar .sidebar__inner{
-    border: 1px dotted red;
-    background-color: rgba(255, 0, 0, 0.01);
-    padding: 10px;
+    
     position: relative;
     transform: translate(0, 0);
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
 }
 
+#cursor {
+    transition: transform .1s;
+    
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4rem;
+    border: 1px solid #ccc;
+}
