@@ -98,14 +98,14 @@ ul {
     padding: 1rem 1rem;
 }
 
-.section-wrapper .text-primary {
+.text-first {
     margin-top: 2rem;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
 }
 
-.section-wrapper .text-secondary {
+.text-second {
     margin-top: 2rem;
     font-size: 20px;
     font-weight: 400;
@@ -113,14 +113,14 @@ ul {
     color: #898989;
 }
 
-.section-wrapper .text-third {
+.text-third {
     margin-top: 2rem;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
 }
 
-.section-wrapper .text-small {
+.text-small {
     margin-top: 2rem;
     font-size: 16px;
     font-weight: 400;
@@ -129,6 +129,9 @@ ul {
 }
 
 
+.services-block {
+    margin-bottom: 8rem;
+}
 
 .sidebar-item.active {
     color: red;

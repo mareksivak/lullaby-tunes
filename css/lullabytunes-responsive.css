@@ -1,0 +1,74 @@
+
+
+@media only screen and (max-width: 48rem)
+{
+    .no-xs {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 48rem)
+{
+    .no-sm {
+        display: none;
+    }
+    
+    .section {
+        padding: 8rem 0rem;     
+    }
+    
+    .text-first {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .text-second {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .text-third {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .hero {
+        margin-top: 1rem;
+    }
+    .hero .hero-wrapper {
+        padding: 6rem 2rem;
+        position: relative;
+        z-index: 3;
+    }
+    .hero img {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 600px;
+        z-index: 2;
+    }
+    .hero h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 62rem)
+{
+}
+
+@media only screen and (min-width: 75rem)
+{
+}
+
+@media only screen and (min-width: 93rem)
+{
+   /* .container {
+        width: 93rem;
+    }*/
+}
+
+.row {
+    margin: 0;
+}
+
+
