@@ -54,6 +54,10 @@
         font-size: 40px;
         line-height: 48px;
     }
+    
+    .client-logo-wrapper img {
+        padding: 4rem;
+    }
 }
 
 @media only screen and (min-width: 62rem)
