@@ -146,10 +146,13 @@ ul {
 }
 
 .services-block {
-    margin-bottom: 16rem;
+    margin-bottom: 8rem;
 }
 .services-block:last-child {
     margin-bottom: 0rem;
+}
+.services-block .text-third {
+    margin-top: 0.5rem;
 }
 
 .sidebar-item a {
