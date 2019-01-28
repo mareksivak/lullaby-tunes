@@ -13,6 +13,10 @@
         display: none;
     }
     
+    .nav {
+        padding: 4rem 4rem;
+    }
+    
     .section {
         padding: 8rem 0rem;     
     }

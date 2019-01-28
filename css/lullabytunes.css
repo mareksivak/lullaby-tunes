@@ -29,6 +29,8 @@ body
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     
+    background: #F7F7F7;
+    
 }
 
 a {
@@ -68,7 +70,7 @@ ul {
 }
 
 .nav {
-    padding: 4rem 4rem;
+    padding: 1rem 1rem;
 }
 .nav .menu li {
     display: inline;
@@ -89,8 +91,6 @@ ul {
 .section {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background: #C4C4CB;
-    background: #fff;
     color: #000;
     position: relative;
 }
