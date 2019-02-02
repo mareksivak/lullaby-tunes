@@ -34,11 +34,11 @@ body
 }
 
 a {
-    color: #000;
+    color: #898989;
     text-decoration: none;
 }
 a:hover {
-    color: #808080;
+    color: #000000;
 }
 a img:hover {
     opacity: 0.6;
