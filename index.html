@@ -57,6 +57,7 @@
     <!--<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>-->
 </head>
 <body class="landing">
+<div class="vs-section">
 <div class="nav">
     <div class="row middle-md">
         <div class="col-xs-12 col-md-4 col-md-offset-1 no-padding">
@@ -80,6 +81,7 @@
         <div class="col-xs-12 col-md-8 col-md-offset-2 no-padding">
             <div class="section-wrapper">
                 <h1>We’re a grooving Hong Kong DJ agency from France.</h1>
+                <div class="hero-action"><a href="">Explore</a></div>
             </div>
         </div>
     </div>
@@ -239,34 +241,30 @@
         </div>
     </div>
 </footer>
-    
+</div>
 <div id="cursor" div class="no-xs"></div>
-    
+<div class="vs-scrollbar vs-vertical">
+    <div class="vs-scrolldrag"></div>
+</div>    
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
-<script src="./js/ResizeSensor.js"></script>
-<script src="./js/sticky-sidebar.js"></script>
-<script src="./js/side-highlight.js"></script>
-<script type="text/javascript">
-    var h_sidebar = document.getElementById('sidebar');
     
-    var sidebar = new StickySidebar(h_sidebar, {
-    topSpacing: 100,
-    bottomSpacing: 20,
-    resizeSensor: true,
-    containerSelector: '.sticky-container',
-    innerWrapperSelector: '.sidebar__inner'
-    });
-    h_sidebar.addEventListener('affix.top.stickySidebar', function () {
-    console.log('Sidebar has stuck top of viewport.');
-});
-    h_sidebar.addEventListener('affix.bottom.stickySidebar', function (event) {
-    console.log('Sidebar has stuck bottom of viewport.');
-});
+<script src="./js/smooth-scrollbar.js"></script>
+<script>
+  const section = document.querySelector('.vs-scrollbar')
+const smooth = new Smooth({
+  native: true,
+  section: section,
+  ease: 0.8
+})
+
+smooth.init()
 </script>
+    
+
 <!--<script src="./js/init-scripts.js"></script>-->
     
 </body>    

@@ -10,8 +10,8 @@
 
 body
 {
-    font-family: aktiv-grotesk, avenir, sans-serif;
-    font-weight: 200;
+    font-family: work-sans, avenir, sans-serif;
+    font-weight: 500;
 	font-size:16px;
     line-height: 1.5;
     color: #333;
@@ -31,6 +31,9 @@ body
     
     background: #F7F7F7;
     
+    /* requested by smooth scroll 
+    height: 100%;
+    overflow: hidden;*/
 }
 
 a {
@@ -71,6 +74,13 @@ ul {
 
 .nav {
     padding: 1rem 1rem;
+}
+.nav .logo {
+    font-family: sofia-pro;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
 }
 .nav .menu li {
     display: inline;
@@ -139,6 +149,9 @@ ul {
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
+.hero .hero-action {
+    margin-top: 2rem;
+}
 
 .client-logo-wrapper img {
     max-width: 100%;
@@ -189,6 +202,46 @@ footer {
     transform: translate(0, 0);
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
+}
+
+.vs-scrollbar {
+    display: block;
+    position: absolute;
+    transition: transform .6s;
+}
+
+.vs-scrollbar.vs-vertical {
+    top: 0;
+    right: -5px;
+    bottom: 0;
+    width: 15px;
+    height: 100%;
+    transform: translate3d(5px,0,0);
+}
+
+@media (max-width: 640px) {
+.vs-scrollbar.vs-vertical {
+    right: 5px;
+    width: 5px;
+}
+}
+
+.vs-scrollbar .vs-scrolldrag {
+    width: 100%;
+    height: auto;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.vs-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    will-change: transform;
 }
 
 #cursor {
