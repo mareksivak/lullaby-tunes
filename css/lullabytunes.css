@@ -204,52 +204,8 @@ footer {
     will-change: position, transform;
 }
 
-.vs-scrollbar {
-    display: block;
-    position: absolute;
-    transition: transform .6s;
+#scroll-section {
+    overflow-y: hidden;
+    height: 100vh;
 }
 
-.vs-scrollbar.vs-vertical {
-    top: 0;
-    right: -5px;
-    bottom: 0;
-    width: 15px;
-    height: 100%;
-    transform: translate3d(5px,0,0);
-}
-
-@media (max-width: 640px) {
-.vs-scrollbar.vs-vertical {
-    right: 5px;
-    width: 5px;
-}
-}
-
-.vs-scrollbar .vs-scrolldrag {
-    width: 100%;
-    height: auto;
-    background: #ccc;
-    cursor: pointer;
-}
-
-.vs-section {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    will-change: transform;
-}
-
-#cursor {
-    transition: transform .1s;
-    pointer-events: none;
-    
-    width: 2rem;
-    height: 2rem;
-    border-radius: 4rem;
-    border: 1px solid #ccc;
-}

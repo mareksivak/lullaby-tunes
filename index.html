@@ -57,7 +57,7 @@
     <!--<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>-->
 </head>
 <body class="landing">
-<div class="vs-section">
+<div id="scroll-section">
 <div class="nav">
     <div class="row middle-md">
         <div class="col-xs-12 col-md-4 col-md-offset-1 no-padding">
@@ -242,7 +242,6 @@
     </div>
 </footer>
 </div>
-<div id="cursor" div class="no-xs"></div>
 <div class="vs-scrollbar vs-vertical">
     <div class="vs-scrolldrag"></div>
 </div>    
@@ -252,16 +251,22 @@
   crossorigin="anonymous"></script>
 
     
-<script src="./js/smooth-scrollbar.js"></script>
+<script src="./js/idiotwu.smooth-scrollbar.js"></script>
 <script>
-  const section = document.querySelector('.vs-scrollbar')
+  /*const section = document.querySelector('.vs-scrollbar')
 const smooth = new Smooth({
   native: true,
   section: section,
-  ease: 0.8
+  ease: 0.8  
 })
 
-smooth.init()
+smooth.init()*/
+    var Scrollbar = window.Scrollbar;
+
+  Scrollbar.init(document.querySelector('#scroll-section'), {
+	speed: 1,
+	damping:0.05
+});
 </script>
     
 
