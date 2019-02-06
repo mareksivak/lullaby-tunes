@@ -31,9 +31,8 @@ body
     
     background: #F7F7F7;
     
-    /* requested by smooth scroll 
-    height: 100%;
-    overflow: hidden;*/
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -74,6 +73,10 @@ ul {
 
 .nav {
     padding: 1rem 1rem;
+    position:absolute;
+    left: 1rem;
+    right: 1rem;
+    z-index: 10;
 }
 .nav .logo {
     font-family: sofia-pro;
@@ -81,6 +84,16 @@ ul {
     text-transform: uppercase;
     font-size: 24px;
     letter-spacing: 2px;
+}
+.nav .logo img {
+    width: 60px;
+    position: relative;
+    top: 6px;
+    margin-right: 0.25rem;
+    opacity: 0.6;
+}
+.nav .logo:hover img {
+    opacity: 1;
 }
 .nav .menu li {
     display: inline;
@@ -141,16 +154,31 @@ ul {
 }
 
 .label {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
+    font-family: sofia-pro;
+    text-transform: uppercase;
 }
 
 .hero {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    height: 100vh;
+    position: relative;
+    padding: 0rem 1rem;
 }
-.hero .hero-action {
-    margin-top: 2rem;
+.hero-action {
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+}
+.hero-action img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 2px;
+    opacity: 0.4;
+}
+.hero-action:hover img {
+    opacity: 1;
 }
 
 .client-logo-wrapper img {
@@ -164,17 +192,16 @@ ul {
 .services-block:last-child {
     margin-bottom: 0rem;
 }
+.services-block .text-second {
+    color: #000;
+    padding-top: 0.1rem;
+}
 .services-block .text-third {
     margin-top: 0.5rem;
 }
 
-.sidebar-item a {
-    color: #898989;
-    margin-right: 2rem;
-}
-.sidebar-item.active a {
-    color: #000;
-    font-weight: 400;
+#clients .logos {
+    margin-top: 4rem;
 }
 
 footer {
@@ -209,3 +236,25 @@ footer {
     height: 100vh;
 }
 
+
+.circle {
+    border-radius: 30rem;
+    position: absolute;
+    background: #eaeaec;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.circle.circle1 {
+    top: 16rem;
+    left: 10rem;
+    height: 40rem;
+    width: 40rem;
+}
+
+.circle.circle2 {
+    top: 76rem;
+    left: 35rem;
+    height: 40rem;
+    width: 40rem;
+}

@@ -1,3 +1,6 @@
+.row {
+    margin: 0;
+}
 
 
 @media only screen and (max-width: 48rem)
@@ -14,7 +17,7 @@
     }
     
     .nav {
-        padding: 4rem 4rem;
+        padding: 1rem 0rem;
     }
     
     .section {
@@ -22,17 +25,17 @@
     }
     
     .text-first {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 38px;
     }
     
     .text-second {
         font-size: 20px;
-        line-height: 28px;
+        line-height: 32px;
     }
     .text-third {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 28px;
     }
     
     .hero {
@@ -43,20 +46,16 @@
         position: relative;
         z-index: 3;
     }
-    .hero img {
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        width: 600px;
-        z-index: 2;
-    }
     .hero h1 {
         font-size: 40px;
         line-height: 48px;
     }
     
     .services-block {
-        margin-bottom: 16rem;
+        margin-bottom: 12rem;
+    }
+    .services-block .text-third {
+        margin-top: 2rem;
     }
     
     .client-logo-wrapper img {
@@ -79,8 +78,5 @@
     }*/
 }
 
-.row {
-    margin: 0;
-}
 
 
