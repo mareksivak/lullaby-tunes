@@ -236,6 +236,14 @@ footer {
     height: 100vh;
 }
 
+.ornament-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
 
 .circle {
     border-radius: 30rem;
@@ -246,15 +254,15 @@ footer {
 }
 
 .circle.circle1 {
-    top: 16rem;
+    top: -2rem;
     left: 10rem;
-    height: 40rem;
-    width: 40rem;
+    height: 50rem;
+    width: 50rem;
 }
 
 .circle.circle2 {
-    top: 76rem;
-    left: 35rem;
+    top: 32rem;
+    left: 55rem;
     height: 40rem;
     width: 40rem;
 }
