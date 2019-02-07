@@ -17,7 +17,7 @@
     }
     
     .nav {
-        padding: 2rem 0rem;
+        padding: 2rem 1rem;
     }
     
     .section {
@@ -41,11 +41,6 @@
     .hero {
         padding-top: 1rem;
     }
-    .hero .hero-wrapper {
-        padding: 6rem 2rem;
-        position: relative;
-        z-index: 3;
-    }
     .hero h1 {
         font-size: 40px;
         line-height: 48px;
@@ -60,6 +55,12 @@
     
     .client-logo-wrapper img {
         padding: 0.5rem;
+    }
+    .client-logo-wrapper:nth-child(odd) img {
+    padding-right: 0.5rem;
+}
+    .client-logo-wrapper:nth-child(even) img {
+        padding-left: 0.5rem;
     }
 }
 
