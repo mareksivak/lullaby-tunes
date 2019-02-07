@@ -145,7 +145,6 @@ ul {
     font-size: 18px;
     font-weight: 200;
     line-height: 1.5;
-    color: #000;
     opacity: 0.8;
 }
 
@@ -207,32 +206,47 @@ ul {
 }
 
 #about {
-    background: #ea66ff;
+    background: #f5edf7;
+    height: 100vh;
 }
 #our-services {
-    background: #9fd;
+    background: #000;
+}
+#our-services .label {
+    color: #fff;
 }
 .services-block {
-    margin-bottom: 8rem;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid #fff;
+    color: #fff;
 }
 .services-block:last-child {
-    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+    border: none;
 }
 .services-block .text-second {
-    color: #000;
+    color: #fff;
     padding-top: 0.1rem;
 }
 .services-block .text-third {
     margin-top: 0.5rem;
 }
 
+#clients {
+    background: #fff;
+}
 #clients .logos {
     margin-top: 4rem;
+}
+
+#contact {
+    background: #fff;   
 }
 
 footer {
     padding-top: 4rem;
     padding-bottom: 1rem;
+    background: #fff;
 }
 footer .logo {
     font-family: sofia-pro;
