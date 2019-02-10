@@ -54,6 +54,7 @@ h1, h2, h3, h5 {
 
 h1 {
     font-size: 24px;
+    font-family: sofia-pro;
 }
 h3 {
     font-size: 16px;
@@ -231,7 +232,7 @@ ul {
     padding-bottom: 0rem;
 }
 .services-block .text-second {
-    padding-top: 0.1rem;
+    padding-top: 0.5rem;
     color: #969697;
     text-transform: uppercase;
     font-family: sofia pro;
