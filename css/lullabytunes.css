@@ -125,6 +125,11 @@ ul {
     padding: 1rem 1rem;
 }
 
+.section-header {
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #CACACA;
+}
+
 .text-first {
     margin-top: 2rem;
     font-size: 24px;
@@ -137,7 +142,7 @@ ul {
     font-size: 20px;
     font-weight: 200;
     line-height: 1.5;
-    color: #898989;
+    color: #777;
 }
 
 .text-third {
@@ -145,7 +150,7 @@ ul {
     font-size: 18px;
     font-weight: 200;
     line-height: 1.5;
-    opacity: 0.8;
+    color: #898989;
 }
 
 .text-small {
@@ -157,10 +162,20 @@ ul {
 }
 
 .label {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     font-family: sofia-pro;
     text-transform: uppercase;
+    color: #777;
+    letter-spacing: 0.05rem;
+}
+.sect-num {
+    font-size: 19px;
+    font-weight: 700;
+    font-family: sofia-pro;
+    text-transform: uppercase;
+    color: #AAA;
+    letter-spacing: 0.05rem;
 }
 
 .hero {
@@ -196,37 +211,28 @@ ul {
 
 .client-logo-wrapper img {
     max-width: 100%;
-    padding: 1rem;
-}
-.client-logo-wrapper:nth-child(odd) img {
-    padding-right: 0rem;
-}
-.client-logo-wrapper:nth-child(even) img {
-    padding-left: 0rem;
 }
 
 #about {
-    background: #f5edf7;
-    height: 100vh;
+    background: #fff;
 }
+
 #our-services {
-    background: #000;
-}
-#our-services .label {
-    color: #fff;
+    background: #fff;
 }
 .services-block {
     padding-bottom: 5rem;
-    border-bottom: 2px solid #fff;
-    color: #fff;
 }
 .services-block:last-child {
     padding-bottom: 0rem;
-    border: none;
 }
 .services-block .text-second {
-    color: #fff;
     padding-top: 0.1rem;
+    color: #969697;
+    text-transform: uppercase;
+    font-family: sofia pro;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
 }
 .services-block .text-third {
     margin-top: 0.5rem;
@@ -236,7 +242,7 @@ ul {
     background: #fff;
 }
 #clients .logos {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 #contact {
