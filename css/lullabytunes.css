@@ -233,6 +233,8 @@ ul {
     font-family: sofia pro;
     font-weight: 700;
     letter-spacing: 0.05rem;
+    font-size: 18px!important;
+    line-height: 22px!important;
 }
 .services-block .text-third {
     margin-top: 0.5rem;
