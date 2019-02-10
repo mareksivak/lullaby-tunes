@@ -89,11 +89,15 @@ ul {
     color: #fff;
 }
 .nav .logo img {
-    width: 60px;
+    width: 90px;
     position: relative;
     top: 6px;
     margin-right: 0.25rem;
-    opacity: 0.6;
+    opacity: 0.9;
+}
+.nav .logo span {
+    pointer-events: none;
+    opacity: 0;
 }
 .nav .logo:hover img {
     opacity: 1;
