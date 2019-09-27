@@ -263,9 +263,12 @@ footer {
 }
 footer .logo {
     font-family: sofia-pro;
+    
+    line-height: 1.1;
+}
+footer .logo span {
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.1;
 }
 
 
